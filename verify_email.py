@@ -20,6 +20,7 @@ while True:
 
     f = open("email_comm.txt", "r+")
     email = f.readline()
+    email = email.strip()
 
     if email != "ready" and email != "true" and email != "false":
         f.seek(0)
